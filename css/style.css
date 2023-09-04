@@ -73,9 +73,9 @@ header .logo {
   margin-left: 20px;
 }
 
-.header-nav-desktop ul li a:hover, .header-nav-desktop ul li a.active{
+ul li a:hover, ul li a.active{
   border-bottom: 3px solid  #B28756;
-  padding-bottom: 10px;
+  padding-bottom: 8px;
   color: #ccc;
 }
 
@@ -223,14 +223,37 @@ header .logo {
 }
 
 
-/* MEDIA */
+/* PROJECTS */
 .projects {
   padding: 30px 0;
 }
 
-.filters-container ul{
-  display: flex;
-  justify-content: center;
+.filters-container {
+  border: 1px solid #CCC;
+  background-color: #EEE;
+  border-radius: 20px;
+  padding: 10px;
+  max-width: 500px;
+  margin: 25px auto ;
+}
+.filters-container ul {
+  text-align: center;
+}
+.filters-container ul li {
+  display: inline-block;
+  border-right: 1px solid #CCC;
+  padding-right: 10px;
+  margin-left: 2px;
+}
+
+.filters-container ul li:last-child {
+  border-right: none;
+}
+.filters-container ul li a{
+  color: #555;
+  font-size: 13px;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 
@@ -306,5 +329,18 @@ header .logo {
   }
   .service-single{
     border-left: none;
+  }
+  .filters-container {
+    max-width: 300px;
+  }
+  .filters-container ul li {
+    display: block;
+    border-right: none;
+    padding-right: 0;
+    margin-left: 0px;
+    margin-bottom: 20px;
+  }
+  .filters-container ul li a:hover, .filters-container ul li a.active{
+    padding-bottom: 5px;
   }
  }
