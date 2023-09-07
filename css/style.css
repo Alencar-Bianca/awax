@@ -226,6 +226,7 @@ ul li a:hover, ul li a.active{
 /* PROJECTS */
 .projects {
   padding: 30px 0;
+  text-align: center;
 }
 
 .filters-container {
@@ -255,6 +256,71 @@ ul li a:hover, ul li a.active{
   text-decoration: none;
   text-transform: uppercase;
 }
+
+.gallery-container  {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  
+}
+.gallery-container .photo-single img {
+  width: 280px;
+  height: 200px;
+ 
+}
+.project-container .button {
+  margin-top: 20px;
+}
+
+/* OUR TEAM */
+.team {
+  height: 500px;
+  
+}
+.team .container {
+  padding: 30px 0;
+} 
+.team-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.team-single {
+  padding: 40px 0;
+  border-radius: 20px;
+  background-color: #fff;
+  height: 330px;
+  width: 250px;
+  text-align: center;
+  margin-left: 15px;
+}
+
+.team-single img {
+  text-align: center;
+  width: 150px;
+}
+.social {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.social a {
+  background-color: #ccc;
+  margin-left: 10px;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social a img{
+  object-fit: contain;
+  width: 15px;
+  height: 15px;
+}
+
 
 
 /* MEDIA */
@@ -342,5 +408,12 @@ ul li a:hover, ul li a.active{
   }
   .filters-container ul li a:hover, .filters-container ul li a.active{
     padding-bottom: 5px;
+  }
+  .gallery-container .photo-single img {
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+    max-width: 280px;
+   
   }
  }
