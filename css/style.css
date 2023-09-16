@@ -316,16 +316,62 @@ ul li a:hover, ul li a.active{
   align-items: center;
   justify-content: center;
 }
+.social a:hover {
+  background-color: #B28756;
+}
+
 .social a img{
   object-fit: contain;
   width: 15px;
   height: 15px;
+}
+.slider-container2 {
+  display: flex;
+  margin: 20px 0;
+  justify-content: center;
 }
 
 /* HAAPY CLIENTS */
 
 .happy-clients {
   padding:  40px 0;
+}
+.clients-container {
+  text-align: center;
+  /* display: flex;
+  justify-content: center; */
+}
+.single-client p:first-of-type {
+  font-size: 17px;
+  font-weight: bold;
+}
+.single-client img:first-child {
+  margin: 20px 0;
+  width: 130px;
+}
+.single-client .text {
+  color: #808080;
+  padding: 0 2% ;
+  max-width: 700px;
+  margin: 10px auto;
+}
+.section-testimonials--quoteimg {
+  margin-top: 20px;
+}
+
+/* COMPANIES */
+.lines {
+  border-top: 1px solid #808080;
+  border-bottom: 1px solid #808080;
+}
+.companies{
+  background-color: #F7F7F7;
+  padding: 30px 0;
+ }
+.companies-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 /* MEDIA */
 @media (max-width: 950px) {
@@ -382,6 +428,15 @@ ul li a:hover, ul li a.active{
   }
   .team-single { 
     margin-bottom: 20px;
+  }
+  .companies-container {
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  .companies-container img{
+    margin: 20px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
   }
 }
 
