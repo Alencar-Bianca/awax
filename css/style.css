@@ -81,10 +81,11 @@ ul li a:hover, ul li a.active{
 
 /* BANNER */
 .banner {
+  background-color: #333;
   background-image: url('../images/photos/bg.jpg');
   background-position: bottom;
   background-size: cover;
-  height: 640px;
+  height:calc(100vh - 100px) ;
 }
 .banner-container{
   display: flex;
@@ -279,7 +280,7 @@ ul li a:hover, ul li a.active{
   
 }
 .team .container {
-  padding: 30px 0;
+  padding: 30px 10px;
 } 
 .team-container {
   display: flex;
@@ -321,8 +322,11 @@ ul li a:hover, ul li a.active{
   height: 15px;
 }
 
+/* HAAPY CLIENTS */
 
-
+.happy-clients {
+  padding:  40px 0;
+}
 /* MEDIA */
 @media (max-width: 950px) {
   .header-nav-desktop{
@@ -367,6 +371,18 @@ ul li a:hover, ul li a.active{
     border-left: none;
   }
   
+}
+
+@media (max-width: 860px) {
+  .team-container {
+    flex-wrap: wrap;
+  }
+  .team {
+    height: auto;
+  }
+  .team-single { 
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 500px) {
