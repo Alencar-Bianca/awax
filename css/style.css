@@ -362,7 +362,7 @@ ul li a:hover, ul li a.active{
 /* COMPANIES */
 .lines {
   border-top: 1px solid #808080;
-  border-bottom: 1px solid #808080;
+  /* border-bottom: 1px solid #808080; */
 }
 .companies{
   background-color: #F7F7F7;
@@ -373,6 +373,64 @@ ul li a:hover, ul li a.active{
   justify-content: space-evenly;
   align-items: center;
 }
+
+
+/* PRICES */
+.prices {
+  padding: 40px 0;
+}
+.plans {
+  display: flex;
+  justify-content: space-between;
+}
+.plan {
+  flex: 1;
+  background-color: #faf7f7;
+  margin-right: 20px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+.plan .title {
+  font-size: 13px;
+}
+.plan .price {
+  font-weight: bold;
+  font-size: 22px;
+  margin: 15px 0;
+}
+.plan .price > span {
+  color: #ccc;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin: 15px 0;
+  display: block;
+}
+.description {
+  font-size: 13px;
+}
+.description span {
+  display: block;
+  margin-bottom: 5px;
+}
+.plan .button {
+  background-color: #333;
+  margin-top: 10px;
+}
+.plan .button:hover {
+  background-color: #B28756;
+  
+}
+
+/* PRODUCT */
+.product {
+  padding: 30px 0;
+}
+.product .conteudo {
+  display: flex;
+  /* align-items: flex-end; */
+}
+
 /* MEDIA */
 @media (max-width: 950px) {
   .header-nav-desktop{
@@ -438,6 +496,12 @@ ul li a:hover, ul li a.active{
     margin-bottom: 20px;
     flex-wrap: wrap;
   }
+  .plans {
+    flex-wrap: wrap;
+  }
+  .plan {
+    min-width: 200px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -486,5 +550,11 @@ ul li a:hover, ul li a.active{
     object-fit: cover;
     max-width: 280px;
    
+  }
+ }
+
+ @media (max-width: 200px) {
+  .plan {
+    min-width: auto;
   }
  }
