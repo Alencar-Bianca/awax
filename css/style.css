@@ -428,7 +428,29 @@ ul li a:hover, ul li a.active{
 }
 .product .conteudo {
   display: flex;
-  /* align-items: flex-end; */
+  margin: auto;
+  padding: 30px 0;
+  max-width: 800px;
+}
+
+.info {
+  display: flex;
+  margin-bottom: 50px;
+  align-items: flex-start;
+}
+
+
+.info img {
+  margin-right: 20px;
+}
+
+.info h2 {
+  font-weight: bold;
+}
+.info p, .info ul {
+  color: #999;
+  line-height: 20px;
+  font-size: 13px;
 }
 
 /* MEDIA */
@@ -501,6 +523,13 @@ ul li a:hover, ul li a.active{
   }
   .plan {
     min-width: 200px;
+  }
+  .product .conteudo {
+    align-items: center;
+    flex-direction: column;
+  }
+  .product .conteudo > img{
+    margin-bottom: 40px;
   }
 }
 
