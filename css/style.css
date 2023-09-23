@@ -378,6 +378,7 @@ ul li a:hover, ul li a.active{
 /* PRICES */
 .prices {
   padding: 40px 0;
+  overflow-x: hidden;
 }
 .plans {
   display: flex;
@@ -425,6 +426,7 @@ ul li a:hover, ul li a.active{
 /* PRODUCT */
 .product {
   padding: 20px 0;
+  overflow-x: hidden;
 }
 .product .conteudo {
   display: flex;
@@ -456,14 +458,69 @@ ul li a:hover, ul li a.active{
   margin-top: 40px;
 }
 
-/* MEDIA */
+/* FACTS */
 .facts {
+  overflow-x: hidden;
   background-color: #111111;
   padding: 40px 0;
 }
 
 .container-facts{
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.fact {
+  text-align: center;
+}
+.fact h2 {
+  color: #B28756;
+  font-size: 45px;
+  font-weight: bold;
+}
+.fact .line {
+  width: 50px;
+  height: 2px;
+  margin: 8px auto;
+  background-color: #B28756;
+}
+.fact h3 {
+  color: #fff;
+  margin-top: 20px;
+  font-size: 17px;
+  font-weight: bold;
+}
+.fact p {
+  color: #8d8d8d;
+  margin-top: 8px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+
+/* CONTACT */
+.compartilhar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+.compartilhar .social img{
+  margin-right: 10px;
+}
+.compartilhar .social p{
+  margin-right: 10px;
+  color: #999;
+  font-size: 15px;
+}
+
+.contact {
+  padding: 30px 0;
+}
+
+.form {
+  text-align: center;
 }
 
 /* MEDIA */
@@ -543,6 +600,14 @@ ul li a:hover, ul li a.active{
   }
   .product .conteudo > img{
     margin-bottom: 40px;
+  }
+  .container-facts{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .fact {
+    margin-top: 20px;
+    min-width: 300px;
   }
 }
 
