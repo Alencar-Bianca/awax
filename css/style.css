@@ -424,7 +424,7 @@ ul li a:hover, ul li a.active{
 
 /* PRODUCT */
 .product {
-  padding: 30px 0;
+  padding: 20px 0;
 }
 .product .conteudo {
   display: flex;
@@ -451,6 +451,19 @@ ul li a:hover, ul li a.active{
   color: #999;
   line-height: 20px;
   font-size: 13px;
+}
+.product .slide {
+  margin-top: 40px;
+}
+
+/* MEDIA */
+.facts {
+  background-color: #111111;
+  padding: 40px 0;
+}
+
+.container-facts{
+  display: flex;
 }
 
 /* MEDIA */
