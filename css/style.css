@@ -8,6 +8,7 @@
 	vertical-align: baseline;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
+  outline: none;
 }
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -265,6 +266,25 @@ ul li a:hover, ul li a.active{
   gap: 5px;
   
 }
+
+.photo-single {
+  position: relative;
+  
+}
+.d-none {
+  display: none;
+}
+.photo-single .photo-info:hover{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex; 
+  flex-direction: column;
+  justify-content: center; 
+  cursor: pointer;
+}
+
 .gallery-container .photo-single img {
   width: 280px;
   height: 200px;
@@ -518,9 +538,44 @@ ul li a:hover, ul li a.active{
 .contact {
   padding: 30px 0;
 }
-
+.contact .title-container {
+  margin-bottom: 30px;
+}
 .form {
-  text-align: center;
+  max-width: 500px;
+  margin: auto;
+  padding: 0 2% ;
+}
+
+.contact input, .contact textarea  {
+  border-bottom: 1px solid #CCC;
+  resize: none;
+  padding-bottom: 15px ;
+  margin-bottom: 30px;
+}
+.input-w50{
+  display: flex;
+  width: 100%;
+}
+.contact form .name, .contact form .email {
+  width: 100%;
+
+}
+.contact form .name {
+  margin-right: 30px;
+
+}
+
+.contact form textarea, .contact form .subject{
+   display: block;
+   width: 100%;
+   
+}
+
+.contact form textarea {
+  /* width: auto;
+  height: auto; */
+  padding-bottom: 80px ;
 }
 
 /* MEDIA */
@@ -657,6 +712,15 @@ ul li a:hover, ul li a.active{
     object-fit: cover;
     max-width: 280px;
    
+  }
+
+  .input-w50 {
+    display: block;
+  }
+
+  .contact form .name {
+    margin-right: 0;
+  
   }
  }
 
